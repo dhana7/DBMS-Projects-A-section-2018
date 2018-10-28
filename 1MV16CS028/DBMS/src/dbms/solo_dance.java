@@ -209,7 +209,7 @@ public class solo_dance extends javax.swing.JFrame {
             PreparedStatement pst=null;
             Class.forName("com.mysql.cj.jdbc.Driver");
           con=DriverManager.getConnection("jdbc:mysql://localhost:3308/student","root","srihny143");
-          String sql="select * from solo_event where event_id=3";
+          String sql="select * from solo_event where event_id=1";
            pst=con.prepareStatement(sql);
            rs=pst.executeQuery(sql);
            d.jTable3.setModel(DbUtils.resultSetToTableModel(rs));
